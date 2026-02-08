@@ -26,7 +26,11 @@ $bg = get_the_post_thumbnail_url(get_the_ID(), 'full');
 
         <div class="col-md-4">
             <div class="card h-100 text-center">
-                <img src="<?php echo get_template_directory_uri(); ?>/calcons1.jpg" class="card-img-top" alt="Calçons 1">
+                <?php
+                $calcons1_id = 54;
+                $calcons1_url = wp_get_attachment_image_src($calcons1_id, 'full')[0];
+                ?>
+                <img src="<?php echo esc_url($calcons1_url); ?>" class="card-img-top" alt="Calçons 1">
                 <div class="card-body">
                     <h5 class="card-title">Calçons Bàsics</h5>
                     <p class="card-text">Preu: 15€</p>
@@ -37,7 +41,11 @@ $bg = get_the_post_thumbnail_url(get_the_ID(), 'full');
 
         <div class="col-md-4">
             <div class="card h-100 text-center">
-                <img src="<?php echo get_template_directory_uri(); ?>/calcons2.jpg" class="card-img-top" alt="Calçons 2">
+                <?php
+                $calcons2_id = 43;
+                $calcons2_url = wp_get_attachment_image_src($calcons2_id, 'full')[0];
+                ?>
+                <img src="<?php echo esc_url($calcons2_url); ?>" class="card-img-top" alt="Calçons 2">
                 <div class="card-body">
                     <h5 class="card-title">Calçons Esportius</h5>
                     <p class="card-text">Preu: 20€</p>
@@ -48,7 +56,11 @@ $bg = get_the_post_thumbnail_url(get_the_ID(), 'full');
 
         <div class="col-md-4">
             <div class="card h-100 text-center">
-                <img src="<?php echo get_template_directory_uri(); ?>/calcons3.jpg" class="card-img-top" alt="Calçons 3">
+                <?php
+                $calcons3_id = 35;
+                $calcons3_url = wp_get_attachment_image_src($calcons3_id, 'full')[0];
+                ?>
+                <img src="<?php echo esc_url($calcons3_url); ?>" class="card-img-top" alt="Calçons 3">
                 <div class="card-body">
                     <h5 class="card-title">Calçons Elegants</h5>
                     <p class="card-text">Preu: 25€</p>

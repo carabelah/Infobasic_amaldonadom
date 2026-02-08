@@ -24,7 +24,11 @@ $bg = get_the_post_thumbnail_url(get_the_ID(), 'full');
 
         <div class="col-md-4">
             <div class="card h-100 text-center">
-                <img src="<?php echo get_template_directory_uri(); ?>/servei1.jpg" class="card-img-top" alt="Gestió">
+                <?php
+                $servei1_id = 37;
+                $servei1_url = wp_get_attachment_image_src($servei1_id, 'full')[0];
+                ?>
+                <img src="<?php echo esc_url($servei1_url); ?>" class="card-img-top" alt="Gestió">
                 <div class="card-body">
                     <h5 class="card-title">Gestió</h5>
                     <p class="card-text">Organitzem tots els processos per a tu de manera eficient.</p>
@@ -35,7 +39,11 @@ $bg = get_the_post_thumbnail_url(get_the_ID(), 'full');
 
         <div class="col-md-4">
             <div class="card h-100 text-center">
-                <img src="<?php echo get_template_directory_uri(); ?>/servei2.jpg" class="card-img-top" alt="Ajuda">
+                <?php
+                $servei2_id = 55;
+                $servei2_url = wp_get_attachment_image_src($servei2_id, 'full')[0];
+                ?>
+                <img src="<?php echo esc_url($servei2_url); ?>" class="card-img-top" alt="Ajuda">
                 <div class="card-body">
                     <h5 class="card-title">Ajuda</h5>
                     <p class="card-text">Assessorament i suport personalitzat per a cada client.</p>
@@ -46,7 +54,11 @@ $bg = get_the_post_thumbnail_url(get_the_ID(), 'full');
 
         <div class="col-md-4">
             <div class="card h-100 text-center">
-                <img src="<?php echo get_template_directory_uri(); ?>/servei3.jpg" class="card-img-top" alt="Venda">
+                <?php
+                $servei3_id = 38;
+                $servei3_url = wp_get_attachment_image_src($servei3_id, 'full')[0];
+                ?>
+                <img src="<?php echo esc_url($servei3_url); ?>" class="card-img-top" alt="Venda">
                 <div class="card-body">
                     <h5 class="card-title">Venda</h5>
                     <p class="card-text">Productes i serveis de qualitat adaptats a les teves necessitats.</p>
